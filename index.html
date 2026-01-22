@@ -3,16 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An Extended Project Qualification examining why Irish history is largely absent from UK education, exploring structural, professional, and political factors behind curriculum omissions.">
+    <meta name="keywords" content="Irish history, UK education, curriculum, EPQ, Brexit, Good Friday Agreement">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Why Is There a Lack of Irish History in the UK Education System?">
+    <meta property="og:description" content="An Extended Project Qualification examining the structural, professional, and political factors behind curriculum omissions.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="Irish History in UK Education | EPQ Research">
+    <meta property="twitter:description" content="Examining why Irish history is largely absent from UK education systems.">
+
     <title>Irish History in UK Education | EPQ Research</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a href="#introduction" class="skip-link">Skip to main content</a>
     <div class="progress-bar" id="progressBar"></div>
 
-    <nav class="main-nav">
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">EPQ Research</a>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -43,16 +62,25 @@
         </div>
     </header>
 
-    <main>
-        <section id="introduction" class="content-section">
+    <main role="main">
+        <section id="introduction" class="content-section" aria-labelledby="intro-heading">
             <div class="container">
-                <h2>Introduction</h2>
+                <h2 id="intro-heading">Introduction</h2>
 
                 <div class="lead-text">
                     <p>In December 2017, a seemingly simple question exposed a profound gap in British public understanding. As Brexit negotiations reached a critical impasse over the Irish border, journalists and commentators expressed surprise that this "suddenly" had become an issue.</p>
                 </div>
 
-                <p>British politicians appeared genuinely baffled by Ireland's insistence that no Brexit deal could proceed without guarantees protecting the Good Friday Agreement. Former Taoiseach Bertie Ahern observed with frustration that many British negotiators could benefit from a "crash course in the lessons of Irish history," noting particularly that some "former Eton and Oxford students" contributing to the Brexit debate displayed "sheer ignorance, and sometimes arrogance, of the realities of Irish history and Irish political affairs" (Ahern, 2018).</p>
+                <p>British politicians appeared genuinely baffled by Ireland's insistence that no Brexit deal could proceed without guarantees protecting the Good Friday Agreement.</p>
+
+                <div class="pull-quote">
+                    <svg class="quote-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/>
+                        <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>
+                    </svg>
+                    <p>Many British negotiators could benefit from a crash course in the lessons of Irish history... Some former Eton and Oxford students displayed sheer ignorance, and sometimes arrogance, of the realities of Irish history.</p>
+                    <cite>— Bertie Ahern, Former Taoiseach, 2018</cite>
+                </div>
 
                 <blockquote>
                     <p>This was not merely a diplomatic embarrassment; it revealed a systematic educational failure. How had British students graduated without understanding the history of their nearest neighbour, a relationship spanning eight centuries and shaping both nations profoundly?</p>
@@ -60,12 +88,25 @@
 
                 <p>The answer lies not in individual failings but in the structure of British education itself. Irish history is largely absent from English, Welsh, and Scottish curricula, relegated to optional status and rarely taught. A 2006 study by history educator Paul Bracey found that only 5.06% of history teachers mentioned Irish dimensions in their curriculum. Recent research by Janssen (2023) analysing history textbooks from 2010-2020 confirms this pattern: the Great Irish Famine receives minimal coverage in English textbooks compared to Irish ones, and when included, is often framed through a narrow, Anglo-centric lens.</p>
 
-                <div class="stat-highlight">
-                    <div class="stat-number">5.06%</div>
+                <div class="stat-highlight" role="figure" aria-label="Key statistic">
+                    <div class="stat-visualization">
+                        <svg class="stat-circle" viewBox="0 0 200 200" aria-hidden="true">
+                            <circle class="stat-circle-bg" cx="100" cy="100" r="80" />
+                            <circle class="stat-circle-progress" cx="100" cy="100" r="80" />
+                        </svg>
+                        <div class="stat-number" aria-label="5.06 percent">5.06%</div>
+                    </div>
                     <div class="stat-label">of history teachers mention Irish dimensions in their curriculum</div>
+                    <div class="stat-comparison">That means <strong>94.94%</strong> do not teach Irish history at all</div>
                 </div>
 
-                <p>The Troubles, a three-decade conflict that killed over 3,500 people and ended only in 1998, fares little better. Even in Northern Ireland, only approximately 25% of students take history at GCSE, where these topics become optional rather than mandatory. Meanwhile, across the Irish Sea, Irish students study British-Irish history as a compulsory part of their national curriculum.</p>
+                <p>The Troubles, a three-decade conflict that killed over 3,500 people and ended only in 1998, fares little better. Even in Northern Ireland, only approximately 25% of students take history at GCSE, where these topics become optional rather than mandatory.</p>
+
+                <div class="info-box info-box-highlight">
+                    <h4>📚 A Stark Contrast</h4>
+                    <p><strong>In Ireland:</strong> British-Irish history is compulsory for all students as part of the national curriculum.</p>
+                    <p><strong>In the UK:</strong> Irish history is optional and rarely taught, even in regions directly affected by the Troubles.</p>
+                </div>
 
                 <h3>The Real-World Consequences</h3>
 
@@ -102,7 +143,9 @@
 
                 <h3>Research Methodology</h3>
 
-                <p>To examine this question rigorously, this research employs a multi-method approach:</p>
+                <div class="section-note">
+                    <p><strong>Research Approach:</strong> This study employs a multi-method approach combining curriculum analysis, academic literature review, and comparative research to understand why Irish history remains absent from UK education.</p>
+                </div>
 
                 <ol class="methodology-list">
                     <li><strong>Systematic analysis</strong> of curriculum documents from the Department for Education (2014) and examination specifications from AQA, Edexcel, OCR, and CCEA</li>

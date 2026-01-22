@@ -2,10 +2,17 @@
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
 
+// Create and append backdrop
+const backdrop = document.createElement('div');
+backdrop.className = 'nav-backdrop';
+document.body.appendChild(backdrop);
+
 if (navToggle && navLinks) {
     navToggle.addEventListener('click', () => {
         navLinks.classList.toggle('active');
         navToggle.classList.toggle('active');
+        backdrop.classList.toggle('active');
+        document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
     });
 
     // Close mobile nav when clicking a link
@@ -13,7 +20,17 @@ if (navToggle && navLinks) {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
             navToggle.classList.remove('active');
+            backdrop.classList.remove('active');
+            document.body.style.overflow = '';
         });
+    });
+
+    // Close mobile nav when clicking backdrop
+    backdrop.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        navToggle.classList.remove('active');
+        backdrop.classList.remove('active');
+        document.body.style.overflow = '';
     });
 }
 
